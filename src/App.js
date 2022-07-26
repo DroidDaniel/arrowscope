@@ -5,16 +5,19 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Dashboard from "./components/Dashboard";
+import View from "./components/View";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      
       <Router>
+      <Navbar />
         <Routes>
           <Route path="/" element={<Articles />} />
-          <Route path="/login" element={<Addarticles />} />
+          <Route path="/upload" element={<Addarticles />} />
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/view/:id" element={<View />} />
         </Routes>
       </Router>
       <Footer />

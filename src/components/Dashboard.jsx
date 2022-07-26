@@ -5,6 +5,7 @@ import { deleteObject, ref } from 'firebase/storage';
 import React, { useEffect, useState } from 'react'
 import { toast } from 'react-toastify';
 import {dp, storage} from "../firebaseConfig"
+import { Link } from 'react-router-dom';
 
 function Dashboard() {
   const [articles, setArticles] = useState([])
@@ -35,34 +36,13 @@ function Dashboard() {
   };
 
 
-  var [currentId, setCurrentId] = useState('')
-
-   const handleEdit = async ({id}) => {
-        //console.log(id) 
-        if(id){
-          const docRef = doc(dp, "Articles", id);
-          const docSnap = await getDoc(docRef);
-
-         if (docSnap.exists()) {
-            //console.log("Document data:", docSnap.data());
-            const contactObjects = docSnap.data();
-         } else {
-         // doc.data() will be undefined in this case
-         console.log("No such document!");
-         }
-        }
-  }
-
-
-
-
   return (
     <section className='dasboardsection'>
       <div className='arrowscope_container'> 
        <div className='update_container'>
-         <div className='update_container__form'>
+         {/* <div className='update_container__form'>
           <UpdateForm {...({ handleEdit, currentId, articles })}/>
-         </div>
+         </div> */}
          <div className='update_container__article'>
          <table className="table">
   <thead>
@@ -82,14 +62,15 @@ function Dashboard() {
               <td>{title}</td>
               <td><a href={description} target="_blank" className='works_img_link'>{description}</a></td>
               <td>
-              <a className="btn text-primary">
-                <i className="fas fa-pencil-alt"  onClick={() => { setCurrentId(id) }}>Edit</i>
-              </a>
+              <Link to={`/view/${id}`}>
+                <i className="fas fa-pencil-alt">View</i> </Link>
+              
               <a className="btn text-danger" onClick={ () => handleDelete({ id, imageUrl })}>
                   <i className="far fa-trash-alt">Delete</i>
               </a>
               </td>
             </tr>
+           
              ))
         
   

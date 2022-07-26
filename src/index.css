@@ -169,6 +169,23 @@ nav{
 
 .nav_links_ul{
   margin: 0;
+  display: flex;
+}
+
+.nav_links_ul li{
+  list-style-type: none;
+  margin-left: 10px;
+}
+
+.nav_links_ul li a{
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.nav_links_ul li a:hover,
+.nav_links_ul li.active a{
+  color: #ca953a;
 }
 
 .nav_links_name{
@@ -297,3 +314,9 @@ tbody{
   width: 100%;
 }
 
+/**********viewsection******************/
+
+.viewsection{
+  height: 100vh;
+  margin: 50px 0;
+}
