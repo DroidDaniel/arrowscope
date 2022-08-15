@@ -1,6 +1,7 @@
 import React from 'react'
+import "./AdminFooter.css"
 
-function Footer() {
+function AdminFooter() {
   return (
     <section className="footersection">
       <div className='arrowscope_container'>
@@ -9,4 +10,4 @@ function Footer() {
   )
 }
 
-export default Footer
+export default AdminFooter

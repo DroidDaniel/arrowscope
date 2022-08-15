@@ -1,0 +1,137 @@
+.login_app__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+}
+
+@media screen and (max-width:600px) {
+  .login_app__container{
+     grid-template-columns: 1fr;
+  }
+}
+
+.login_form__container{
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .login-form {
+    width: 100%;
+    padding: 30px;
+    position: relative;
+  }
+
+
+  .login-form .backto_home{
+    position: absolute;
+  }
+
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    position: relative;
+  }
+
+  .input-container input[type="text"],
+  .input-container input[type="password"] {
+    border:none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+    transition: all .2s ease;
+    font-size: 16px;
+    padding: 10px 5px;
+  }
+
+  .input-container input[type="text"]:focus,
+  .input-container input[type="password"]:focus {
+    border-bottom: 1px solid #fe8400;
+    background-color: #fff !important;
+    outline: none;
+  }
+
+  input:-webkit-autofill:active {
+    -webkit-text-fill-color: #fff !important;
+  }
+
+  .button-container input[type="submit"] {
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 22px;
+    background: #aa0503;
+    border: none;
+    color: #000;
+    padding: 15px 20px;
+    width: 100%;
+    transition: all .2s ease;
+    font-weight: 700;
+    border-radius: 3px;
+    box-shadow:0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
+              inset 0 -2px 5px 1px rgba(139,66,8,1),
+              inset 0 -1px 1px 3px rgba(250,227,133,1);
+  background-image: linear-gradient(160deg, #a54e07, #b47e11, #fef1a2, #bc881b, #a54e07);
+  }
+  
+  .button-container input[type="submit"]:hover {
+    color: #000;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .list-container {
+    display: flex;
+  }
+  
+  .error {
+    color: red;
+    font-size: 12px;
+    position: absolute;
+    bottom: 12px;
+  }
+  
+  .login_form__container .title {
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+    color: #0b1826;
+  }
+
+  .login__img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     background-color: #0b1826;
+     position: relative;
+  }
+
+  .form_profile img{
+    max-width: 220px;
+  }
+
+  @media screen and (max-width:600px) {
+    .form_profile img{
+      max-width: 120px;
+    }
+  }
+
+  .login-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media screen and (max-width:600px) {
+    .login-form{
+      padding: 0 10px;
+    }
+  }
+
+  .login_form_wrapper{
+    width: 100%;
+  }

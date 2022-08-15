@@ -1,0 +1,44 @@
+.bannersection{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url("../../images/india.png");
+    background-repeat: repeat-x;
+    background-position: bottom;
+}
+.banner__info{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.banner__titile{
+    font-size: 42px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+@media screen and (max-width:600px) {
+   .banner__titile{
+    font-size: 28px;
+   } 
+}
+
+
+.banner__subtitile{
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+@media screen and (max-width:600px) {
+    .banner__subtitile{
+     font-size: 14px;
+    } 
+ }
+
+.banner__titile span{
+    color:radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+}

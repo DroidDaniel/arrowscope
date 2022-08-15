@@ -1,11 +1,12 @@
-import UpdateForm from './UpdateForm'
-import { async } from '@firebase/util';
 import { collection, deleteDoc, doc, getDoc, onSnapshot, orderBy, query, setDoc } from 'firebase/firestore'
 import { deleteObject, ref } from 'firebase/storage';
 import React, { useEffect, useState } from 'react'
 import { toast } from 'react-toastify';
-import {dp, storage} from "../firebaseConfig"
+import {dp, storage} from "../../firebaseConfig"
 import { Link } from 'react-router-dom';
+import AdminNavbar from './AdminNavbar';
+import AdminFooter from "./AdminFooter"
+import "./Dashboard.css"
 
 function Dashboard() {
   const [articles, setArticles] = useState([])
@@ -38,25 +39,22 @@ function Dashboard() {
 
   return (
     <section className='dasboardsection'>
+      <AdminNavbar/>
       <div className='arrowscope_container'> 
        <div className='update_container'>
-         {/* <div className='update_container__form'>
-          <UpdateForm {...({ handleEdit, currentId, articles })}/>
-         </div> */}
          <div className='update_container__article'>
          <table className="table">
-  <thead>
-    <tr>
-      <th scope="col">Post Image</th>
-      <th scope="col">Title</th>
-      <th scope="col">Post URL</th>
-      <th scope="col">Action</th>
-    </tr>
-  </thead>
-  <tbody>
-  {
-     
-            articles.map(({id,title,description,imageUrl}) =>(
+          <thead>
+            <tr>
+             <th scope="col">Post Image</th>
+             <th scope="col">Title</th>
+             <th scope="col">Post URL</th>
+             <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            {
+             articles.map(({id,title,description,imageUrl}) =>(
             <tr key={id} className="works_img_wrapper">
               <td><img className='works_img' src={imageUrl} alt={title} style={{width:50,height:50}}/></td>
               <td>{title}</td>
@@ -70,17 +68,13 @@ function Dashboard() {
               </a>
               </td>
             </tr>
-           
-             ))
-        
-  
-  
-  }
-  </tbody>
-</table>
+             ))}
+           </tbody>
+           </table>
           </div>
         </div>
       </div>
+      <AdminFooter/>
     </section>
   )
 }

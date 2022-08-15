@@ -1,26 +1,25 @@
 import "./App.css";
-import Articles from "./components/Articles";
-import Addarticles from "./components/Addarticles";
+import UploadArticle from "./components/Admin/UploadArticle";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import Dashboard from "./components/Dashboard";
-import View from "./components/View";
+import Dashboard from "./components/Admin/Dashboard";
+import View from "./components/Admin/View";
+import ArrCore from "./components/ArrCore";
+import Portfolio from "./components/Admin/Portfolio";
+import Login from "./components/Login/Login";
 
 function App() {
   return (
     <div className="App">
-      
       <Router>
-      <Navbar />
         <Routes>
-          <Route path="/" element={<Articles />} />
-          <Route path="/upload" element={<Addarticles />} />
+          <Route path="/" element={<ArrCore />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/ourworks" element={<Portfolio />} />
+          <Route path="/upload" element={<UploadArticle />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/view/:id" element={<View />} />
         </Routes>
       </Router>
-      <Footer />
     </div>
   );
 }

@@ -1,0 +1,47 @@
+.about_sec{
+    padding: 60px 0;
+    background: #0b1826;
+    color: #fff;
+}
+.about_container{
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+    border-bottom: solid 1px #ccc;
+}
+
+@media screen and (max-width:600px) {
+    .about_container{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+}
+
+
+.about_info{
+    padding: 0 20px;
+}
+
+@media screen and (max-width:600px) {
+    .about_info{
+        padding: 20px 0;
+    }
+}
+
+.about_title{
+    text-align: left;
+    margin-top: 0;
+    background-image: linear-gradient(
+        to right,
+        #462523 0,
+               #cb9b51 22%, 
+        #f6e27a 45%,
+        #f6f2c0 50%,
+        #f6e27a 55%,
+        #cb9b51 78%,
+        #462523 100%
+        );
+       color:transparent;
+       -webkit-background-clip:text;
+}

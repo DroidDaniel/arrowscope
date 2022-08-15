@@ -2,12 +2,16 @@ import { addDoc, collection, Timestamp } from 'firebase/firestore'
 import { getDownloadURL, ref, uploadBytesResumable } from 'firebase/storage';
 import React, { useState } from 'react'
 import { toast } from 'react-toastify';
-import { dp, storage } from '../firebaseConfig';
-import uploadicon from '../images/cloud-computing.png'
+import { dp, storage } from '../../firebaseConfig';
+import uploadicon from './../../images/cloud-computing.png'
+import "./UploadArticle.css"
+import AdminNavbar from './AdminNavbar';
+import AdminFooter from './AdminFooter';
 
-function Addarticles() {
+function UploadArticle() {
     const [formData, setFormData] = useState({
         title:"",
+        category:"",
         description:"",
         image:"",
         createdAt:Timestamp.now().toDate(),
@@ -27,9 +31,11 @@ function Addarticles() {
 		    setFile(URL.createObjectURL(e.target.files[0]));
     }
 
+    const [error, setError] = useState("")
+
     const handlePuplish = (e) =>{
         if(!formData.title || !formData.category || !formData.description || !formData.image){
-            return;
+            return setError("Please Enter valid data");
         }
         const storageRef = ref(storage, `/images/${Date.now()}${formData.image.name}`)
         const uploadImage = uploadBytesResumable(storageRef , formData.image)
@@ -47,6 +53,7 @@ function Addarticles() {
                 image:"",
             });
             
+            setError("")
             setFile(uploadicon)
 
             getDownloadURL(uploadImage.snapshot.ref)
@@ -71,6 +78,8 @@ function Addarticles() {
     }
 
   return (
+    <>
+    <AdminNavbar/>
     <section className="uploadsection">
       <div className='arrowscope_container'>
       <h2 className="arrowscope_heading_main">UPLOAD NEW WORKS</h2>
@@ -85,7 +94,8 @@ function Addarticles() {
           <input className="form_field" placeholder='Enter Title' type='text' name='title' value={formData.title} onChange={(e) => handleChange(e)}/>
           <input className="form_field" placeholder='Enter Category' type='text' name='category' value={formData.category} onChange={(e) => handleChange(e)}/>
           <input name='description' placeholder='Enter URL' className="form_field" value={formData.description} onChange={(e) => handleChange(e)}/>
-          <button className="btn_puplish" onClick={handlePuplish}>Puplish</button> 
+          <button className="btn_puplish" onClick={handlePuplish}>Puplish</button>
+          <p className='upload__error'>{error}</p>
           {progress === 0 ? null : (
             <div className="progress">
             <div className="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{ width: `${progress}%` }}></div>
@@ -95,7 +105,9 @@ function Addarticles() {
      </div>
      </div>
     </section>
+    <AdminFooter/>
+    </>
   )
 }
 
-export default Addarticles
+export default UploadArticle
