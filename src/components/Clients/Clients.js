@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import Slider from "react-slick";
 import "../../../node_modules/slick-carousel/slick/slick.css";
 import "../../../node_modules/slick-carousel/slick/slick-theme.css";
@@ -15,7 +15,7 @@ function Clients(props) {
     slidesToShow: 8,
     slidesToScroll: 1,
     autoplay: true,
-    speed: 3000,
+    speed: 5000,
     autoplaySpeed: 10,
     cssEase: "linear",
     rtl: props.dir,

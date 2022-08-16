@@ -8,7 +8,11 @@
     justify-content: space-between;
     max-width: 800px;
     margin: 0 auto;
-    border-bottom: solid 1px #ccc;
+    box-sizing: content-box;
+    border-width: 8px ;
+    border-style: solid;
+    border-image: linear-gradient(to right bottom, #cb9b51, #462523);
+    border-image-slice: 1;
 }
 
 @media screen and (max-width:600px) {
@@ -24,8 +28,11 @@
 }
 
 @media screen and (max-width:600px) {
-    .about_info{
-        padding: 20px 0;
+    .about_info {
+        padding:20px 0;
+    }
+    .about_info .arr__body_text{
+        padding:0 20px;
     }
 }
 

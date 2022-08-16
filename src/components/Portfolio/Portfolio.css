@@ -24,6 +24,7 @@
 .portfolio_container .portfolio_img{
     background-repeat: no-repeat;
     background-size: cover;
+    box-shadow: 2px 5px 10px rgba(204, 204, 204, 0.438);
 }
 
 .one{
@@ -121,6 +122,12 @@
 .seemore_text{
     text-align: right;
     margin-top: 20px;
+}
+
+@media screen and (max-width:600px) {
+    .seemore_text{
+        text-align: center;
+    }   
 }
 
 .btn_seemore{
