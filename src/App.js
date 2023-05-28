@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Dashboard from "./components/Admin/Dashboard";
 import View from "./components/Admin/View";
 import ArrCore from "./components/ArrCore";
-import Portfolio from "./components/Admin/Portfolio";
+import Portfolio from "./Portfolio";
 import Login from "./components/Login/Login";
 
 function App() {

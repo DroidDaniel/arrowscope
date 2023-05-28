@@ -9,20 +9,22 @@ function Navbar() {
       <div className="arrowscope_container">
         <div className="arr__nav_container">
           <div className="arr__logo_container">
-            <img src={CompanyLogo} alt="CompanyLogo" />
+            <Link to="/">
+              <img src={CompanyLogo} alt="CompanyLogo" />
+            </Link>
           </div>
           <div className="arr__links_container">
             <ul className="arr__links_ul">
               {/* <li className="arr__links_items">ABOUT US</li>
               <li className="arr__links_items">SERVICE</li> */}
               <li className="arr__links_items">
-                <Link to="/">OUR WORKS</Link>
+                <Link to="/ourworks">OUR WORKS</Link>
               </li>
               <li className="arr__links_items">
                 <a href="tel:+919539192162">9539192162</a>
               </li>
               <li className="arr__links_items">
-                <Link to="/login">LOGIN</Link>
+                <Link to="/">HOME</Link>
               </li>
             </ul>
           </div>

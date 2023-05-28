@@ -24,3 +24,15 @@
     background-color: #0d2035;
     color: #fff;
 }
+
+
+.btn_arr a{
+    text-decoration: none;
+    color: #fff;
+    transition: all .3s ease;
+    font-weight: bold;
+}
+
+.btn_arr a:hover{
+    color: #d4a240;
+}

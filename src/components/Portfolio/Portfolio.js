@@ -1,6 +1,7 @@
 import React from "react";
 import Title from "../Utility/Title";
 import "./Portfolio.css";
+import { Link } from "react-router-dom";
 
 function Portfolio() {
   return (
@@ -21,9 +22,9 @@ function Portfolio() {
             <div className="portfolio_img eight"></div>
           </div>
           <div className="seemore_text">
-            <a href="/" target="_blank" className="btn_seemore">
+            <Link to="/ourworks" className="btn_seemore">
               SEE MORE
-            </a>
+            </Link>
           </div>
         </div>
       </div>
