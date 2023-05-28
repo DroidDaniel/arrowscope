@@ -5,10 +5,10 @@
     top: 0;
     z-index: 1;
     width: 100%;
-    padding: 10px 0;
+    padding: 15px 0;
 }
 .arr__logo_container img{
-    max-width: 90px;
+    max-width: 75px;
 }
 
 .arr__links_ul{
@@ -20,13 +20,29 @@
     display: inline-block;
     list-style-type: none;
     margin: 0 20px;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 22px;
     font-weight: 500;
     opacity: .7;
     transition: all .3s ease;
     cursor: pointer;
     position: relative;
+}
+
+.arr__links_items:hover{
+    opacity: 1;
+}
+
+.arr__links_items svg{
+    width: 21px;
+    height: 21px;
+    fill: #fff;
+    transition: all .3s ease;
+    margin: 0 5px 5px 0;
+}
+
+.arr__links_items svg:hover{
+    fill: #fff;
 }
 
 @media screen and (max-width:600px) {

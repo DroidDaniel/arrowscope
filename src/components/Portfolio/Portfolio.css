@@ -10,7 +10,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: 250px;
-    gap: 30px;
+    gap: 20px;
 }
 
 @media screen and (max-width:600px) {
@@ -25,6 +25,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 2px 5px 10px rgba(204, 204, 204, 0.438);
+    transition: all .5s ease-in-out;
 }
 
 .one{
@@ -139,10 +140,14 @@
     -webkit-background-clip: text;
     border:solid 1px #462523;
     padding: 10px 30px;
+    box-shadow: 5px 5px 10px #cccccca8;
+    transition: all .2s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .btn_seemore:hover{
     background-image: linear-gradient( to right, #462523 0, #cb9b51 22%, #462523 45%, #cb9b51 50%, #f6e27a 55%, #462523 78%, #462523 100% );
     color: transparent;
     -webkit-background-clip: text;
+    box-shadow: none;
 }
+
