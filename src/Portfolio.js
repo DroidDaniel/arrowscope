@@ -10,22 +10,22 @@ import Loading from ".././src/images/loading.gif";
 const portfolio = [
   {
     name: "My best client",
-    category: "['all', 'frontend', 'ux-ui']",
+    category: "['all', 'fashion', 'travel']",
     imgurl: "images/port1.jpg",
   },
   {
     name: "My favorite case",
-    category: ["all", "mobile", "ux-ui"],
+    category: ["all", "education", "travel"],
     imgurl: "images/port2.jpg",
   },
   {
     name: "A old job",
-    category: ["all", "frontend"],
+    category: ["all", "fashion"],
     imgurl: "images/port3.jpg",
   },
   {
     name: "It is a really cool website",
-    category: ["all", "frontend", "ux-ui"],
+    category: ["all", "fashion", "travel", "others"],
     imgurl: "images/port4.jpg",
   },
   {
@@ -60,26 +60,32 @@ function Portfolio() {
       <Navbar />
       <div className="portfolio-container">
         <div className="portfolio__labels">
-          <span active={filter === "all"} onClick={() => setFilter("all")}>
+          <span
+            className={filter == "all" ? "active" : ""}
+            onClick={() => setFilter("all")}
+          >
             All
           </span>
           <span
-            active={filter === "frontend"}
-            onClick={() => setFilter("frontend")}
+            className={filter == "fashion" ? "active" : ""}
+            onClick={() => setFilter("fashion")}
           >
-            Frontend
+            Fashion
           </span>
           <span
-            active={filter === "mobile"}
-            onClick={() => setFilter("mobile")}
+            className={filter == "education" ? "active" : ""}
+            onClick={() => setFilter("education")}
           >
-            Mobile
-          </span>
-          <span active={filter === "ux-ui"} onClick={() => setFilter("ux-ui")}>
-            UX/UI
+            Education
           </span>
           <span
-            active={filter === "others"}
+            className={filter == "travel" ? "active" : ""}
+            onClick={() => setFilter("travel")}
+          >
+            Travel
+          </span>
+          <span
+            className={filter == "others" ? "active" : ""}
             onClick={() => setFilter("others")}
           >
             Others
