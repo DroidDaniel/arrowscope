@@ -34,7 +34,8 @@
 
 @media screen and (max-width:720px) {
     .portfolio_card__container{
-        height: 250px;
+        width: 100px;
+        height: 150px;
     }
 }
 
@@ -51,6 +52,7 @@
 
 @media screen and (max-width:720px) {
     .portfolio_card__wrapper{
-        height: 250px;
+        width: 100px;
+        height: 150px;
     }
 }
