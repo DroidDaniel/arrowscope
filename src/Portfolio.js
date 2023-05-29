@@ -7,38 +7,101 @@ import Navbar from "./components/Navbar/Navbar";
 import AdminFooter from "./components/Admin/AdminFooter";
 import Loading from ".././src/images/loading.gif";
 
+const portfolio = [
+  {
+    name: "My best client",
+    category: "['all', 'frontend', 'ux-ui']",
+    imgurl: "images/port1.jpg",
+  },
+  {
+    name: "My favorite case",
+    category: ["all", "mobile", "ux-ui"],
+    imgurl: "images/port2.jpg",
+  },
+  {
+    name: "A old job",
+    category: ["all", "frontend"],
+    imgurl: "images/port3.jpg",
+  },
+  {
+    name: "It is a really cool website",
+    category: ["all", "frontend", "ux-ui"],
+    imgurl: "images/port4.jpg",
+  },
+  {
+    name: "Something more",
+    category: ["all", "others"],
+    imgurl: "images/port1.jpg",
+  },
+];
+
 function Portfolio() {
-  const [data, setData] = useState([]);
+  const [filter, setFilter] = useState("all");
+  const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    Axios.get("./portfolio.json")
-      .then((res) => {
-        console.log("getting from ::::", res.data);
-        setData(res.data);
-      })
-      .catch((err) => console.log(err));
+    setProjects(portfolio);
   }, []);
+
+  console.log(portfolio);
+
+  useEffect(() => {
+    setProjects([]);
+
+    const filtered = portfolio.map((p) => ({
+      ...p,
+      filtered: p.category.includes(filter),
+    }));
+    setProjects(filtered);
+  }, [filter]);
+
   return (
     <>
       <Navbar />
       <div className="portfolio-container">
-        <div className="portfolio_card">
-          {data.length === 0 ? (
-            <img src={Loading} alt="" />
-          ) : (
-            data.map((data, index) => {
-              return (
+        <div className="portfolio__labels">
+          <span active={filter === "all"} onClick={() => setFilter("all")}>
+            All
+          </span>
+          <span
+            active={filter === "frontend"}
+            onClick={() => setFilter("frontend")}
+          >
+            Frontend
+          </span>
+          <span
+            active={filter === "mobile"}
+            onClick={() => setFilter("mobile")}
+          >
+            Mobile
+          </span>
+          <span active={filter === "ux-ui"} onClick={() => setFilter("ux-ui")}>
+            UX/UI
+          </span>
+          <span
+            active={filter === "others"}
+            onClick={() => setFilter("others")}
+          >
+            Others
+          </span>
+        </div>
+        <div className="portfolio__container">
+          <div className="portfolio_card">
+            {projects.map((item) =>
+              item.filtered === true ? (
                 <div className="portfolio_card__container">
                   <LazyLoadImage
-                    key={data.id}
+                    key={item.name}
                     className="portfolio_card__wrapper"
-                    src={data.imgurl}
+                    src={item.imgurl}
                     effect="blur"
                   />
                 </div>
-              );
-            })
-          )}
+              ) : (
+                ""
+              )
+            )}
+          </div>
         </div>
       </div>
       <AdminFooter />

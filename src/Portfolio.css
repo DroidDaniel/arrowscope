@@ -43,3 +43,20 @@
     transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
+.portfolio__labels span{
+    padding: 10px;
+    border-radius: 3px;
+    background-color: #cc9d53;
+}
+
+.portfolio__labels{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    cursor: pointer;
+    row-gap: 10px;
+    margin-bottom: 30px;
+}

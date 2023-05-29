@@ -1,0 +1,27 @@
+[
+    {
+      "name": "My best client daniel",
+      "category": "['all', 'frontend', 'ux-ui']",
+      "imgurl": "images/port1.jpg",
+    },
+    {
+      "name": "My favorite case",
+      "category": ["all", "mobile", "ux-ui"],
+      "imgurl": "images/port2.jpg",
+    },
+    {
+      "name": "A old job",
+      "category": ["all", "frontend"],
+      "imgurl": "images/port3.jpg",
+    },
+    {
+      "name": "It is a really cool website",
+      "category": ["all", "frontend", "ux-ui"],
+      "imgurl": "images/port4.jpg",
+    },
+    {
+      "name": "Something more",
+      "category": ["all", "others"],
+      "imgurl": "images/port1.jpg",
+    },
+  ]
