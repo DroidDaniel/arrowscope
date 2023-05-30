@@ -10,28 +10,103 @@ import Loading from ".././src/images/loading.gif";
 const portfolio = [
   {
     name: "My best client",
-    category: "['all', 'fashion', 'travel']",
-    imgurl: "images/port1.jpg",
-  },
-  {
-    name: "My favorite case",
-    category: ["all", "education", "travel"],
-    imgurl: "images/port2.jpg",
+    category: "['all', 'fashion']",
+    imgurl: "images/fashion1.jpeg",
   },
   {
     name: "A old job",
     category: ["all", "fashion"],
-    imgurl: "images/port3.jpg",
+    imgurl: "images/fashion2.png",
   },
   {
     name: "It is a really cool website",
-    category: ["all", "fashion", "travel", "others"],
-    imgurl: "images/port4.jpg",
+    category: ["all", "fashion"],
+    imgurl: "images/fashion3.jpg",
+  },
+  {
+    name: "It is a really cool website",
+    category: ["all", "fashion"],
+    imgurl: "images/fashion4.jpg",
+  },
+  {
+    name: "It is a really cool website",
+    category: ["all", "fashion"],
+    imgurl: "images/fashion5.jpg",
+  },
+  {
+    name: "My favorite case",
+    category: ["all", "education"],
+    imgurl: "images/education1.jpg",
+  },
+  {
+    name: "My favorite case",
+    category: ["all", "education"],
+    imgurl: "images/education2.jpg",
+  },
+  {
+    name: "My favorite case",
+    category: ["all", "education"],
+    imgurl: "images/education3.jpg",
+  },
+  {
+    name: "My favorite case",
+    category: ["all", "education"],
+    imgurl: "images/education4.jpg",
+  },
+  {
+    name: "My favorite case",
+    category: ["all", "education"],
+    imgurl: "images/education5.jpg",
+  },
+  {
+    name: "My favorite case",
+    category: ["all", "travel"],
+    imgurl: "images/travel1.jpg",
+  },
+  {
+    name: "My favorite case",
+    category: ["all", "travel"],
+    imgurl: "images/travel2.jpg",
+  },
+  {
+    name: "My favorite case",
+    category: ["all", "travel"],
+    imgurl: "images/travel3.jpg",
+  },
+  {
+    name: "My favorite case",
+    category: ["all", "travel"],
+    imgurl: "images/travel4.jpg",
+  },
+  {
+    name: "My favorite case",
+    category: ["all", "travel"],
+    imgurl: "images/travel5.jpg",
   },
   {
     name: "Something more",
     category: ["all", "others"],
-    imgurl: "images/port1.jpg",
+    imgurl: "images/other1.jpg",
+  },
+  {
+    name: "Something more",
+    category: ["all", "others"],
+    imgurl: "images/other2.jpg",
+  },
+  {
+    name: "Something more",
+    category: ["all", "others"],
+    imgurl: "images/other3.jpg",
+  },
+  {
+    name: "Something more",
+    category: ["all", "others"],
+    imgurl: "images/other4.png",
+  },
+  {
+    name: "Something more",
+    category: ["all", "others"],
+    imgurl: "images/other5.jpg",
   },
 ];
 
@@ -93,18 +168,22 @@ function Portfolio() {
         </div>
         <div className="portfolio__container">
           <div className="portfolio_card">
-            {projects.map((item) =>
-              item.filtered === true ? (
-                <div className="portfolio_card__container">
-                  <LazyLoadImage
-                    key={item.name}
-                    className="portfolio_card__wrapper"
-                    src={item.imgurl}
-                    effect="blur"
-                  />
-                </div>
-              ) : (
-                ""
+            {projects.length === 0 ? (
+              <img src={Loading} alt="" />
+            ) : (
+              projects.map((item) =>
+                item.filtered === true ? (
+                  <div className="portfolio_card__container">
+                    <LazyLoadImage
+                      key={item.name}
+                      className="portfolio_card__wrapper"
+                      src={item.imgurl}
+                      effect="blur"
+                    />
+                  </div>
+                ) : (
+                  ""
+                )
               )
             )}
           </div>
