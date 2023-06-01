@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
-          <Route path="/" element={<ArrCore />} />
+          <Route path="/" element={<Portfolio />} />
           <Route path="/login" element={<Login />} />
           <Route path="/ourworks" element={<Portfolio />} />
           <Route path="/upload" element={<UploadArticle />} />

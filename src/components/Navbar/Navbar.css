@@ -84,8 +84,8 @@
     content: '';
     width: 0%;
     height: 5px;
-    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
-    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+    background: radial-gradient(ellipse farthest-corner at right bottom, #1a237e 0%, #fce4ec 8%, #ad1457 30%, #512da8 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #0277bd 25%, #e53935 62.5%, #c2185b 100%);
     position: absolute;
     bottom: 0;
     transition: all .3s ease;

@@ -38,7 +38,7 @@ function Navbar() {
             <ul className="arr__links_ul">
               {/* <li className="arr__links_items">ABOUT US</li>
               <li className="arr__links_items">SERVICE</li> */}
-              <li className="arr__links_items">
+              {/* <li className="arr__links_items">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 47.5 47.5"
@@ -75,7 +75,7 @@ function Navbar() {
                   </g>
                 </svg>
                 <a href="tel:+919539192162">9539192162</a>
-              </li>
+              </li> */}
               <li className="arr__links_items">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
