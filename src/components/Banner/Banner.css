@@ -2,14 +2,26 @@
     height: 100vh;
     display: flex;
     align-items: center;
-    background-image: url("../../images/india.png");
-    background-repeat: repeat-x;
-    background-position: bottom;
+    background-image: url("../../images/book-show.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
+
+.bannersection::before{
+    content: ' ';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #00000096;
+}
+
 .banner__info{
     display: flex;
     flex-direction: column;
     text-align: center;
+    color: #fff;
+    position: relative;
 }
 
 .banner__titile{

@@ -9,7 +9,7 @@ function Banner() {
         <div className="banner__info">
           <div className="banner__content">
             <p className="banner__titile">
-              We are Creative <span>Marketing Agency</span>
+              We are <span>Quality Book Printers</span>
             </p>
             <p className="banner__subtitile">
               Lorem Ipsum is simply dummy text of the printing and typesetting

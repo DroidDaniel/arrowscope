@@ -1,7 +1,6 @@
 .about_sec{
-    padding: 60px 0;
-    background: #0b1826;
-    color: #fff;
+    padding: 120px 0 60px 0;
+    color: #000;
 }
 .about_container{
     display: flex;

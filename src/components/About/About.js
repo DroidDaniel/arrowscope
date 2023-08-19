@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 import "./About.css";
 import Origami from ".././../images/origami3.png";
 import Title from "../Utility/Title";
@@ -28,7 +28,7 @@ function About() {
         </div>
       </div>
     </section>
-  );
+  )
 }
 
-export default About;
+export default About
