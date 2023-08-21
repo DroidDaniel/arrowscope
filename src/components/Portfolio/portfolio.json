@@ -1,0 +1,102 @@
+[
+  {
+    "name": "My best client",
+    "category": "['all', 'fashion']",
+    "imgurl": "images/fashion1.jpeg"
+  },
+  {
+    "name": "A old job",
+    "category": ["all", "fashion"],
+    "imgurl": "images/fashion2.png"
+  },
+  {
+    "name": "It is a really cool website one",
+    "category": ["all", "fashion"],
+    "imgurl": "images/fashion3.jpg"
+  },
+  {
+    "name": "It is a really cool website two",
+    "category": ["all", "fashion"],
+    "imgurl": "images/fashion4.jpg"
+  },
+  {
+    "name": "It is a really cool website three",
+    "category": ["all", "fashion"],
+    "imgurl": "images/fashion5.jpg"
+  },
+  {
+    "name": "My favorite case",
+    "category": ["all", "education"],
+    "imgurl": "images/education1.jpg"
+  },
+  {
+    "name": "My favorite case",
+    "category": ["all", "education"],
+    "imgurl": "images/education2.jpg"
+  },
+  {
+    "name": "My favorite case",
+    "category": ["all", "education"],
+    "imgurl": "images/education3.jpg"
+  },
+  {
+    "name": "My favorite case",
+    "category": ["all", "education"],
+    "imgurl": "images/education4.jpg"
+  },
+  {
+    "name": "My favorite case",
+    "category": ["all", "education"],
+    "imgurl": "images/education5.jpg"
+  },
+  {
+    "name": "My favorite case",
+    "category": ["all", "travel"],
+    "imgurl": "images/travel1.jpg"
+  },
+  {
+    "name": "My favorite case",
+    "category": ["all", "travel"],
+    "imgurl": "images/travel2.jpg"
+  },
+  {
+    "name": "My favorite case",
+    "category": ["all", "travel"],
+    "imgurl": "images/travel3.jpg"
+  },
+  {
+    "name": "My favorite case",
+    "category": ["all", "travel"],
+    "imgurl": "images/travel4.jpg"
+  },
+  {
+    "name": "My favorite case",
+    "category": ["all", "travel"],
+    "imgurl": "images/travel5.jpg"
+  },
+  {
+    "name": "Something more",
+    "category": ["all", "others"],
+    "imgurl": "images/other1.jpg"
+  },
+  {
+    "name": "Something more",
+    "category": ["all", "others"],
+    "imgurl": "images/other2.jpg"
+  },
+  {
+    "name": "Something more",
+    "category": ["all", "others"],
+    "imgurl": "images/other3.jpg"
+  },
+  {
+    "name": "Something more",
+    "category": ["all", "others"],
+    "imgurl": "images/other4.png"
+  },
+  {
+    "name": "Something more",
+    "category": ["all", "others"],
+    "imgurl": "images/other5.jpg"
+  }
+]

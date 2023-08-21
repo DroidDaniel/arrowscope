@@ -6,124 +6,26 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 import Loading from "../../images/loading.gif";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
+import Records from './portfolio.json';
+import FallBackImg from "../../images/arrow-logo.png"
+import GoToTop from "../Utility/GoToTop";
 
-const portfolio = [
-  {
-    name: "My best client",
-    category: "['all', 'fashion']",
-    imgurl: "images/fashion1.jpeg",
-  },
-  {
-    name: "A old job",
-    category: ["all", "fashion"],
-    imgurl: "images/fashion2.png",
-  },
-  {
-    name: "It is a really cool website",
-    category: ["all", "fashion"],
-    imgurl: "images/fashion3.jpg",
-  },
-  {
-    name: "It is a really cool website",
-    category: ["all", "fashion"],
-    imgurl: "images/fashion4.jpg",
-  },
-  {
-    name: "It is a really cool website",
-    category: ["all", "fashion"],
-    imgurl: "images/fashion5.jpg",
-  },
-  {
-    name: "My favorite case",
-    category: ["all", "education"],
-    imgurl: "images/education1.jpg",
-  },
-  {
-    name: "My favorite case",
-    category: ["all", "education"],
-    imgurl: "images/education2.jpg",
-  },
-  {
-    name: "My favorite case",
-    category: ["all", "education"],
-    imgurl: "images/education3.jpg",
-  },
-  {
-    name: "My favorite case",
-    category: ["all", "education"],
-    imgurl: "images/education4.jpg",
-  },
-  {
-    name: "My favorite case",
-    category: ["all", "education"],
-    imgurl: "images/education5.jpg",
-  },
-  {
-    name: "My favorite case",
-    category: ["all", "travel"],
-    imgurl: "images/travel1.jpg",
-  },
-  {
-    name: "My favorite case",
-    category: ["all", "travel"],
-    imgurl: "images/travel2.jpg",
-  },
-  {
-    name: "My favorite case",
-    category: ["all", "travel"],
-    imgurl: "images/travel3.jpg",
-  },
-  {
-    name: "My favorite case",
-    category: ["all", "travel"],
-    imgurl: "images/travel4.jpg",
-  },
-  {
-    name: "My favorite case",
-    category: ["all", "travel"],
-    imgurl: "images/travel5.jpg",
-  },
-  {
-    name: "Something more",
-    category: ["all", "others"],
-    imgurl: "images/other1.jpg",
-  },
-  {
-    name: "Something more",
-    category: ["all", "others"],
-    imgurl: "images/other2.jpg",
-  },
-  {
-    name: "Something more",
-    category: ["all", "others"],
-    imgurl: "images/other3.jpg",
-  },
-  {
-    name: "Something more",
-    category: ["all", "others"],
-    imgurl: "images/other4.png",
-  },
-  {
-    name: "Something more",
-    category: ["all", "others"],
-    imgurl: "images/other5.jpg",
-  },
-];
 
 function Portfolio() {
+
   const [filter, setFilter] = useState("all");
   const [projects, setProjects] = useState([]);
+  
 
   useEffect(() => {
-    setProjects(portfolio);
+    setProjects(Records);
   }, []);
 
-  console.log(portfolio);
 
   useEffect(() => {
     setProjects([]);
 
-    const filtered = portfolio.map((p) => ({
+    const filtered = Records.map((p) => ({
       ...p,
       filtered: p.category.includes(filter),
     }));
@@ -173,12 +75,12 @@ function Portfolio() {
             ) : (
               projects.map((item) =>
                 item.filtered === true ? (
-                  <div className="portfolio_card__container">
+                  <div className="portfolio_card__container" key={item.name}>
                     <LazyLoadImage
-                      key={item.name}
                       className="portfolio_card__wrapper"
                       src={item.imgurl}
                       effect="blur"
+                      placeholderSrc={FallBackImg}
                     />
                   </div>
                 ) : (
@@ -189,6 +91,7 @@ function Portfolio() {
           </div>
         </div>
       </div>
+      <GoToTop/>
       <Footer/>
     </>
   );

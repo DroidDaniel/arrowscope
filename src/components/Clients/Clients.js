@@ -8,7 +8,6 @@ import Client2 from "../.././images/clientlogo2.png";
 import Client3 from "../.././images/clientlogo3.png";
 
 function Clients(props) {
-  console.log(props);
   const settings = {
     dots: false,
     infinite: true,

@@ -8,6 +8,7 @@ import Works from "./Works/Works";
 import Showcase from "./Showcase/Showcase";
 import About from "./About/About";
 import Footer from "./Footer/Footer";
+import GoToTop from "./Utility/GoToTop";
 
 
 function ArrCore() {
@@ -25,6 +26,7 @@ function ArrCore() {
       <Clients dir={false} />
       <Clients dir={true} />
       <Clients dir={false} />
+      <GoToTop/>
       <Footer/>
     </>
   );
