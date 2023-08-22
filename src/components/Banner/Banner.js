@@ -1,11 +1,15 @@
 import React from "react";
 import BannerBtn from "../Button/BannerBtn";
 import "./Banner.css";
+import Mov from "../../images/render.mp4"
 
 function Banner() {
   return (
     <section className="bannersection" id="banner">
-      <div className="arrowscope_container">
+      <video autoPlay loop muted id="bgvideo">
+        <source src={Mov} type="video/mp4"/>
+      </video>
+      {/* <div className="arrowscope_container">
         <div className="banner__info">
           <div className="banner__content">
             <p className="banner__titile">
@@ -19,7 +23,7 @@ function Banner() {
             <BannerBtn />
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }
