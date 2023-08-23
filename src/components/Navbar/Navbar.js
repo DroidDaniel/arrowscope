@@ -50,7 +50,7 @@ function Navbar() {
                     </clipPath>
                   </defs>
                   <g
-                    clip-path="url(#a)"
+                    clipPath="url(#a)"
                     transform="matrix(1.25 0 0 -1.25 0 47.5)"
                   >
                     <path d="M13 31a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-2H13v2zm20-2h-6v4a4 4 0 0 1-4 4h-8a4 4 0 0 1-4-4v-4H5a4 4 0 0 1-4-4V5a4 4 0 0 1 4-4h28a4 4 0 0 1 4 4v20a4 4 0 0 1-4 4"></path>

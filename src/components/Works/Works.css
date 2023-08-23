@@ -460,7 +460,7 @@ ul {
   /*
       5. events
   */
-  /* .book:hover > .hardcover_front {
+  .book:hover > .hardcover_front {
     -webkit-transform: rotateY(-145deg) translateZ(0);
     -moz-transform: rotateY(-145deg) translateZ(0);
     transform: rotateY(-145deg) translateZ(0);
@@ -511,7 +511,7 @@ ul {
     -moz-transition-duration: 1.2s;
     transition-duration: 1.2s;
   }
-   */
+  
   /*
       6. Bonus
   */

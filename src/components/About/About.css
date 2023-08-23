@@ -8,10 +8,7 @@
     max-width: 800px;
     margin: 0 auto;
     box-sizing: content-box;
-    border-width: 8px ;
-    border-style: solid;
-    border-image: linear-gradient(to right bottom, #cb9b51, #462523);
-    border-image-slice: 1;
+    border: solid 3px #000;
 }
 
 @media screen and (max-width:600px) {
@@ -38,16 +35,5 @@
 .about_title{
     text-align: left;
     margin-top: 0;
-    background-image: linear-gradient(
-        to right,
-        #462523 0,
-               #cb9b51 22%, 
-        #f6e27a 45%,
-        #f6f2c0 50%,
-        #f6e27a 55%,
-        #cb9b51 78%,
-        #462523 100%
-        );
-       color:transparent;
-       -webkit-background-clip:text;
+    color:#000;
 }

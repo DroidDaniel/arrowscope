@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes, useLocation } from "react-route
 import ArrCore from "./components/ArrCore";
 import Portfolio from "./components/Portfolio/Portfolio";
 import { useEffect } from "react";
+import Detail from "./components/Detail/Detail";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Routes>
           <Route path="/" element={<ArrCore />} />
           <Route path="/ourworks" element={<Portfolio/>}/>
+          <Route path="/ourworks/:slug" element={<Detail/>}/>
         </Routes>
       </Router>
     </div>

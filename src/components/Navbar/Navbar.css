@@ -64,8 +64,8 @@
 }
 
 .arr__links_items svg{
-    width: 21px;
-    height: 21px;
+    width: 14px;
+    height: 14px;
     fill: #de188b;
     transition: all .3s ease;
     margin: 0 5px 5px 0;
@@ -87,6 +87,7 @@
 .arr__links_items a{
     text-decoration: none;
     color: #000;
+    padding: 15px 0;
 }
 
 .arr__links_items a:hover{

@@ -10,7 +10,6 @@ import About from "./About/About";
 import Footer from "./Footer/Footer";
 import GoToTop from "./Utility/GoToTop";
 
-
 function ArrCore() {
   return (
     <>

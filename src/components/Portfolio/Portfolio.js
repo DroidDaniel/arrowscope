@@ -9,7 +9,7 @@ import Footer from "../Footer/Footer";
 import Records from './portfolio.json';
 import FallBackImg from "../../images/arrow-logo.png"
 import GoToTop from "../Utility/GoToTop";
-
+import { Link } from "react-router-dom";
 
 function Portfolio() {
 
@@ -24,7 +24,6 @@ function Portfolio() {
 
   useEffect(() => {
     setProjects([]);
-
     const filtered = Records.map((p) => ({
       ...p,
       filtered: p.category.includes(filter),
@@ -32,11 +31,15 @@ function Portfolio() {
     setProjects(filtered);
   }, [filter]);
 
+
+
+
   return (
     <>
       <Navbar/>
       <div className="portfolio-container">
         <div className="portfolio__labels">
+          <span>Choose Book Type :</span>
           <span
             className={filter == "all" ? "active" : ""}
             onClick={() => setFilter("all")}
@@ -44,28 +47,40 @@ function Portfolio() {
             All
           </span>
           <span
-            className={filter == "fashion" ? "active" : ""}
-            onClick={() => setFilter("fashion")}
+            className={filter == "Alphabet" ? "active" : ""}
+            onClick={() => setFilter("Alphabet")}
           >
-            Fashion
+            Alphabet
           </span>
           <span
-            className={filter == "education" ? "active" : ""}
-            onClick={() => setFilter("education")}
+            className={filter == "Colouring" ? "active" : ""}
+            onClick={() => setFilter("Colouring")}
           >
-            Education
+            Colouring
           </span>
           <span
-            className={filter == "travel" ? "active" : ""}
-            onClick={() => setFilter("travel")}
+            className={filter == "Stories" ? "active" : ""}
+            onClick={() => setFilter("Stories")}
           >
-            Travel
+            Stories
           </span>
           <span
-            className={filter == "others" ? "active" : ""}
-            onClick={() => setFilter("others")}
+            className={filter == "Projects" ? "active" : ""}
+            onClick={() => setFilter("Projects")}
           >
-            Others
+            Projects
+          </span>
+          <span
+            className={filter == "Dictionaries" ? "active" : ""}
+            onClick={() => setFilter("Dictionaries")}
+          >
+            Dictionaries
+          </span>
+          <span
+            className={filter == "General" ? "active" : ""}
+            onClick={() => setFilter("General")}
+          >
+            General
           </span>
         </div>
         <div className="portfolio__container">
@@ -73,16 +88,25 @@ function Portfolio() {
             {projects.length === 0 ? (
               <img src={Loading} alt="" />
             ) : (
-              projects.map((item) =>
+              projects.map((item,key) =>
                 item.filtered === true ? (
-                  <div className="portfolio_card__container" key={item.name}>
+                  <Link to={`/ourworks/${item.slug}`} key={key}>
+                  <div className="portfolio_card__container">
                     <LazyLoadImage
                       className="portfolio_card__wrapper"
                       src={item.imgurl}
                       effect="blur"
                       placeholderSrc={FallBackImg}
                     />
+                     {/* <div className="book_wrap">
+   <a href="#" class="feature-panel-image-link">
+      <div class="feature-panel-image">
+         <img loading="lazy" decoding="async" class="feature-panel-image-img" src="https://archive.smashing.media/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/51e0f837-d85d-4b28-bfab-1c9a47f0ce33/form-design-patterns-shop-image.png" alt="Feature Panel" width="200" height="270"/>
+      </div>
+   </a>
+</div> */}
                   </div>
+                  </Link>
                 ) : (
                   ""
                 )

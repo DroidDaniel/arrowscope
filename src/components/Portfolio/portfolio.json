@@ -1,102 +1,226 @@
 [
   {
-    "name": "My best client",
-    "category": "['all', 'fashion']",
+    "detailID":"0",
+    "slug":"alphabet-book",
+    "name": "Alphabet Book",
+    "category": "['all', 'Alphabet']",
+    "bookImg": "images/book1.jpg",
     "imgurl": "images/fashion1.jpeg"
   },
   {
+    "detailID":"1",
+    "slug":"my-pencil-book",
     "name": "A old job",
-    "category": ["all", "fashion"],
+    "category": ["all", "Alphabet"],
+    "bookImg": "images/book1.jpg",
     "imgurl": "images/fashion2.png"
   },
   {
+    "detailID":"2",
+    "slug":"my-fashion-book",
     "name": "It is a really cool website one",
-    "category": ["all", "fashion"],
+    "category": ["all", "Alphabet"],
+    "bookImg": "images/book1.jpg",
     "imgurl": "images/fashion3.jpg"
   },
   {
+    "detailID":"3",
+    "slug":"my-travel-book",
     "name": "It is a really cool website two",
-    "category": ["all", "fashion"],
+    "category": ["all", "Alphabet"],
+    "bookImg": "images/book1.jpg",
     "imgurl": "images/fashion4.jpg"
   },
   {
+    "detailID":"4",
+    "slug":"my-flight-book",
     "name": "It is a really cool website three",
-    "category": ["all", "fashion"],
+    "category": ["all", "Alphabet"],
+    "bookImg": "images/book1.jpg",
     "imgurl": "images/fashion5.jpg"
   },
   {
+    "detailID":"5",
+    "slug":"my-apple-book",
     "name": "My favorite case",
-    "category": ["all", "education"],
+    "category": ["all", "Colouring"],
+    "bookImg": "images/book1.jpg",
     "imgurl": "images/education1.jpg"
   },
   {
+    "detailID":"6",
+    "slug":"my-car-book",
     "name": "My favorite case",
-    "category": ["all", "education"],
+    "category": ["all", "Colouring"],
+    "bookImg": "images/book1.jpg",
     "imgurl": "images/education2.jpg"
   },
   {
+    "detailID":"7",
+    "slug":"my-bike-book",
     "name": "My favorite case",
-    "category": ["all", "education"],
+    "category": ["all", "Colouring"],
+    "bookImg": "images/book1.jpg",
     "imgurl": "images/education3.jpg"
   },
   {
+    "detailID":"8",
+    "slug":"my-cycle-book",
     "name": "My favorite case",
-    "category": ["all", "education"],
+    "category": ["all", "Colouring"],
+    "bookImg": "images/book1.jpg",
     "imgurl": "images/education4.jpg"
   },
   {
+    "detailID":"9",
+    "slug":"my-school-book",
     "name": "My favorite case",
-    "category": ["all", "education"],
+    "category": ["all", "Colouring"],
+    "bookImg": "images/book1.jpg",
     "imgurl": "images/education5.jpg"
   },
   {
+    "detailID":"10",
+    "slug":"my-tv-book",
     "name": "My favorite case",
-    "category": ["all", "travel"],
+    "category": ["all", "Stories"],
+    "bookImg": "images/book1.jpg",
     "imgurl": "images/travel1.jpg"
   },
   {
+    "detailID":"11",
+    "slug":"my-radio-book",
     "name": "My favorite case",
-    "category": ["all", "travel"],
+    "category": ["all", "Stories"],
+    "bookImg": "images/book1.jpg",
     "imgurl": "images/travel2.jpg"
   },
   {
+    "detailID":"12",
+    "slug":"my-pocket-book",
     "name": "My favorite case",
-    "category": ["all", "travel"],
+    "category": ["all", "Stories"],
+    "bookImg": "images/book1.jpg",
     "imgurl": "images/travel3.jpg"
   },
   {
+    "detailID":"13",
+    "slug":"my-dict-book",
     "name": "My favorite case",
-    "category": ["all", "travel"],
+    "category": ["all", "Stories"],
+    "bookImg": "images/book1.jpg",
     "imgurl": "images/travel4.jpg"
   },
   {
+    "detailID":"14",
+    "slug":"my-street-book",
     "name": "My favorite case",
-    "category": ["all", "travel"],
+    "category": ["all", "Stories"],
+    "bookImg": "images/book1.jpg",
     "imgurl": "images/travel5.jpg"
   },
   {
+    "detailID":"15",
+    "slug":"my-tn-book",
     "name": "Something more",
-    "category": ["all", "others"],
+    "category": ["all", "General"],
+    "bookImg": "images/book1.jpg",
     "imgurl": "images/other1.jpg"
   },
   {
+    "detailID":"16",
+    "slug":"my-kl-book",
     "name": "Something more",
-    "category": ["all", "others"],
+    "category": ["all", "General"],
+    "bookImg": "images/book1.jpg",
     "imgurl": "images/other2.jpg"
   },
   {
+    "detailID":"17",
+    "slug":"my-ind-book",
     "name": "Something more",
-    "category": ["all", "others"],
+    "category": ["all", "General"],
+    "bookImg": "images/book1.jpg",
     "imgurl": "images/other3.jpg"
   },
   {
+    "detailID":"18",
+    "slug":"my-ka-book",
     "name": "Something more",
-    "category": ["all", "others"],
+    "category": ["all", "General"],
+    "bookImg": "images/book1.jpg",
     "imgurl": "images/other4.png"
   },
   {
+    "detailID":"19",
+    "slug":"my-birds-book",
     "name": "Something more",
-    "category": ["all", "others"],
+    "category": ["all", "General"],
+    "bookImg": "images/book1.jpg",
     "imgurl": "images/other5.jpg"
+  },
+  {
+    "detailID":"20",
+    "slug":"my-kl-book",
+    "name": "Something more",
+    "category": ["all", "Projects"],
+    "bookImg": "images/book1.jpg",
+    "imgurl": "images/other2.jpg"
+  },
+  {
+    "detailID":"21",
+    "slug":"my-ind-book",
+    "name": "Something more",
+    "category": ["all", "Projects"],
+    "bookImg": "images/book1.jpg",
+    "imgurl": "images/other3.jpg"
+  },
+  {
+    "detailID":"22",
+    "slug":"my-ka-book",
+    "name": "Something more",
+    "category": ["all", "Projects"],
+    "bookImg": "images/book1.jpg",
+    "imgurl": "images/other4.png"
+  },
+  {
+    "detailID":"23",
+    "slug":"my-birds-book",
+    "name": "Something more",
+    "category": ["all", "Projects"],
+    "bookImg": "images/book1.jpg",
+    "imgurl": "images/other5.jpg"
+  },
+  {
+    "detailID":"24",
+    "slug":"my-pencil-book",
+    "name": "A old job",
+    "category": ["all", "Dictionaries"],
+    "bookImg": "images/book1.jpg",
+    "imgurl": "images/fashion2.png"
+  },
+  {
+    "detailID":"25",
+    "slug":"my-fashion-book",
+    "name": "It is a really cool website one",
+    "category": ["all", "Dictionaries"],
+    "bookImg": "images/book1.jpg",
+    "imgurl": "images/fashion3.jpg"
+  },
+  {
+    "detailID":"26",
+    "slug":"my-travel-book",
+    "name": "It is a really cool website two",
+    "category": ["all", "Dictionaries"],
+    "bookImg": "images/book1.jpg",
+    "imgurl": "images/fashion4.jpg"
+  },
+  {
+    "detailID":"27",
+    "slug":"my-flight-book",
+    "name": "It is a really cool website three",
+    "category": ["all", "Dictionaries"],
+    "bookImg": "images/book1.jpg",
+    "imgurl": "images/fashion5.jpg"
   }
 ]

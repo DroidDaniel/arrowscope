@@ -1,9 +1,10 @@
 .bannersection{
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url("../../images/book-show.jpg");
+    background-color: #000;
+    /* background-image: url("../../images/book-show.jpg"); */
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
