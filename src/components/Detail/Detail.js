@@ -27,7 +27,7 @@ function Detail() {
             <div className='book_mock'>
             <img src={`../${product.bookImg}`} alt='' />
             </div>
-            <a href='https://handcbooks.com/' target='_blank' className='buynow_btn'>BUY NOW</a>
+            <a href='https://handcbooks.com/shop/padmanabhante-kuttikal/' target='_blank' className='buynow_btn'>BUY NOW</a>
             </div>
            </div>
         </div>
