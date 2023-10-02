@@ -8,7 +8,7 @@
   font-weight: bold;
 }
 
-.service1_cont {
+.service1_cont:first-child {
   margin-bottom: 60px;
 }
 
