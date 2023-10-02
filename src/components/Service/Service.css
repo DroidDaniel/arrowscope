@@ -1,0 +1,30 @@
+.service_sec {
+  padding: 60px 0;
+}
+
+.service1_heading {
+  font-size: 22px;
+  line-height: 40px;
+  font-weight: bold;
+}
+
+.service1_cont {
+  margin-bottom: 60px;
+}
+
+.service1_para {
+  font-size: 16px;
+  line-height: 28px;
+  margin: 20px 0;
+}
+
+.service1_imgblock img {
+  width: 100%;
+  max-width: 600px;
+}
+
+.service1_imgblock {
+  display: flex;
+  gap: 30px;
+  margin: 30px 0;
+}

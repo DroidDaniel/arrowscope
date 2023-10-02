@@ -10,6 +10,7 @@ import Portfolio from "./components/Portfolio/Portfolio";
 import { useEffect } from "react";
 import Detail from "./components/Detail/Detail";
 import Support from "./components/Support/Support";
+import Service from "./components/Service/Service";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/" element={<ArrCore />} />
           <Route path="/ourworks" element={<Portfolio />} />
           <Route path="/support" element={<Support />} />
+          <Route path="/services" element={<Service />} />
           <Route path="/ourworks/:slug" element={<Detail />} />
         </Routes>
       </Router>

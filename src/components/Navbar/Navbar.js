@@ -46,7 +46,7 @@ function Navbar() {
                 <Link to="/">ABOUT</Link>
               </li> */}
               <li className="arr__links_items">
-                <Link to="/">SERVICES</Link>
+                <Link to="/services">SERVICES</Link>
               </li>
               <li className="arr__links_items">
                 <Link to="/support">CONTACT</Link>

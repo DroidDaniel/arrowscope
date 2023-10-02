@@ -33,7 +33,6 @@ function Portfolio() {
       <Navbar />
       <div className="portfolio-container">
         <div className="portfolio__labels">
-          <span>Select Book Type :</span>
           <span
             className={filter == "all" ? "active" : ""}
             onClick={() => setFilter("all")}
