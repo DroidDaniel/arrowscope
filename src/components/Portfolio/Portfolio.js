@@ -6,21 +6,18 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 import Loading from "../../images/loading.gif";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
-import Records from './portfolio.json';
-import FallBackImg from "../../images/arrow-logo.png"
+import Records from "./portfolio.json";
+import FallBackImg from "../../images/arrow-logo.png";
 import GoToTop from "../Utility/GoToTop";
 import { Link } from "react-router-dom";
 
 function Portfolio() {
-
   const [filter, setFilter] = useState("all");
   const [projects, setProjects] = useState([]);
-  
 
   useEffect(() => {
     setProjects(Records);
   }, []);
-
 
   useEffect(() => {
     setProjects([]);
@@ -31,12 +28,9 @@ function Portfolio() {
     setProjects(filtered);
   }, [filter]);
 
-
-
-
   return (
     <>
-      <Navbar/>
+      <Navbar />
       <div className="portfolio-container">
         <div className="portfolio__labels">
           <span>Select Book Type :</span>
@@ -88,24 +82,24 @@ function Portfolio() {
             {projects.length === 0 ? (
               <img src={Loading} alt="" />
             ) : (
-              projects.map((item,key) =>
+              projects.map((item, key) =>
                 item.filtered === true ? (
                   <Link to={`/ourworks/${item.slug}`} key={key}>
-                  <div className="portfolio_card__container">
-                    <LazyLoadImage
-                      className="portfolio_card__wrapper"
-                      src={item.imgurl}
-                      effect="blur"
-                      placeholderSrc={FallBackImg}
-                    />
-                     {/* <div className="book_wrap">
-   <a href="#" class="feature-panel-image-link">
-      <div class="feature-panel-image">
-         <img loading="lazy" decoding="async" class="feature-panel-image-img" src="https://archive.smashing.media/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/51e0f837-d85d-4b28-bfab-1c9a47f0ce33/form-design-patterns-shop-image.png" alt="Feature Panel" width="200" height="270"/>
+                    <div className="portfolio_card__container">
+                      <LazyLoadImage
+                        className="portfolio_card__wrapper"
+                        src={item.imgurl}
+                        effect="blur"
+                        placeholderSrc={FallBackImg}
+                      />
+                      {/* <div className="book_wrap">
+   <a href="#" className="feature-panel-image-link">
+      <div className="feature-panel-image">
+         <img loading="lazy" decoding="async" className="feature-panel-image-img" src="https://archive.smashing.media/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/51e0f837-d85d-4b28-bfab-1c9a47f0ce33/form-design-patterns-shop-image.png" alt="Feature Panel" width="200" height="270"/>
       </div>
    </a>
 </div> */}
-                  </div>
+                    </div>
                   </Link>
                 ) : (
                   ""
@@ -115,8 +109,8 @@ function Portfolio() {
           </div>
         </div>
       </div>
-      <GoToTop/>
-      <Footer/>
+      <GoToTop />
+      <Footer />
     </>
   );
 }

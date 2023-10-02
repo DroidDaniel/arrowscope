@@ -1,0 +1,92 @@
+.icon-large {
+  height: 103px;
+  width: 103px;
+  border-radius: 100%;
+  font-size: 14px;
+  background: #ff89ad;
+  color: #fff;
+  text-align: center;
+  line-height: 103px;
+  border: solid 1px #fff;
+  margin-bottom: 30px;
+  margin: 0 auto;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 600px) {
+  .icon-large {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+  }
+}
+
+.support_stripe-info {
+  text-align: center;
+}
+
+.support_stripe-icons-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 60px 0;
+}
+
+.support_stripe-icons {
+  padding: 0 10px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .support_stripe-icons {
+    padding: 0 5px;
+  }
+}
+
+.support_stripe-heading {
+  font-size: 18px;
+  line-height: 36px;
+  margin: 8px 0 0 0;
+}
+
+@media screen and (max-width: 600px) {
+  .support_stripe-heading {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
+.support_stripe-para {
+  font-size: 14px;
+  line-height: 28px;
+  margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .support_stripe-para {
+    font-size: 12px;
+    line-height: 24px;
+  }
+}
+
+.support_icon {
+  width: 45px;
+  stroke: #fff;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 600px) {
+  .support_icon {
+    width: 25px;
+  }
+}
+
+.icon-large:hover {
+  background: #fff;
+  border: solid 1px #ff89ad;
+}
+
+.icon-large:hover .support_icon {
+  stroke: #ff89ad;
+}

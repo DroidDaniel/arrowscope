@@ -38,20 +38,20 @@ function Navbar() {
             <ul className="arr__links_ul">
               {/* <li className="arr__links_items">ABOUT US</li>
               <li className="arr__links_items">SERVICE</li> */}
-              
-         
+
               <li className="arr__links_items">
                 <Link to="/">HOME</Link>
               </li>
-              <li className="arr__links_items">
+              {/* <li className="arr__links_items">
                 <Link to="/">ABOUT</Link>
-              </li>
-              <li className="arr__links_items">
-                <Link to="/">CONTACT</Link>
-              </li>
+              </li> */}
               <li className="arr__links_items">
                 <Link to="/">SERVICES</Link>
               </li>
+              <li className="arr__links_items">
+                <Link to="/support">CONTACT</Link>
+              </li>
+
               <li className="arr__links_items">
                 <Link to="/ourworks">PORTFOLIO</Link>
               </li>

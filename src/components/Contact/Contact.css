@@ -1,0 +1,66 @@
+.contact_sec {
+  padding: 60px 0;
+}
+
+.contact_sec_header {
+  max-width: 700px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.contact_sec_heading {
+  margin-bottom: 30px;
+}
+
+.contact_form__container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.formfield_cnt {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.formfield {
+  padding: 15px 0 15px 15px;
+  border: 1px solid #ffc1d2;
+  border-radius: 4px;
+  outline: none;
+}
+
+.formfield:focus {
+  border: 1px solid #ff83a6 !important;
+}
+
+.formfield_cnt label {
+  color: #3c3c3c;
+  font-size: 13px;
+  line-height: 30px;
+}
+
+textarea.formfield {
+  height: 300px;
+}
+
+.formfield_btn {
+  padding: 15px 0 15px 15px;
+  border: 1px solid #ffc1d2;
+  border-radius: 4px;
+  outline: none;
+  background: #ff83a6;
+  display: inline-block;
+  font-size: 12px;
+  padding: 15px 40px;
+  font-weight: normal;
+  border-radius: 0px;
+  letter-spacing: 2px;
+  color: #fff;
+  border: none !important;
+  transition: all 0.4s ease-in-out;
+}
+
+.formfield_btn:hover {
+  background: #3c3c3c;
+}
