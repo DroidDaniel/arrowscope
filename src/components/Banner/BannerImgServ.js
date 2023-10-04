@@ -4,7 +4,7 @@ import "./BannerImgServ.css";
 function BannerImgServ() {
   return (
     <div>
-      <div className="bannerimg"></div>
+      <div className="bannerimgserv"></div>
     </div>
   );
 }
