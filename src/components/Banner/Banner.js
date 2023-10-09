@@ -1,13 +1,17 @@
 import React from "react";
 import BannerBtn from "../Button/BannerBtn";
 import "./Banner.css";
-import Mov from "../../images/render.mp4"
+import Mov from "../../images/render.mp4";
+import MobMov from "../../images/render-mobile.mp4";
 
 function Banner() {
   return (
     <section className="bannersection" id="banner">
-      <video autoPlay loop muted id="bgvideo">
-        <source src={Mov} type="video/mp4"/>
+      <video autoPlay loop muted id="bgvideo" className="dktp_vid">
+        <source src={Mov} type="video/mp4" />
+      </video>
+      <video autoPlay loop muted id="bgvideo" className="mob_vid">
+        <source src={MobMov} type="video/mp4" />
       </video>
       {/* <div className="arrowscope_container">
         <div className="banner__info">

@@ -11,6 +11,7 @@ import Footer from "./Footer/Footer";
 import GoToTop from "./Utility/GoToTop";
 import Contact from "./Contact/Contact";
 import Support from "./Support/Support";
+import ClientLogo from "./Clients/ClientLogo";
 
 function ArrCore() {
   return (
@@ -24,9 +25,10 @@ function ArrCore() {
       <div className="arrowscope_container">
         <Title title="Our Clients" />
       </div>
-      <Clients dir={false} />
+      {/* <Clients dir={false} />
       <Clients dir={true} />
-      <Clients dir={false} />
+      <Clients dir={false} /> */}
+      <ClientLogo />
       <GoToTop />
       <Footer />
     </>

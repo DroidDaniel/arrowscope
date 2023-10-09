@@ -3,19 +3,19 @@ import Slider from "react-slick";
 import "../../../node_modules/slick-carousel/slick/slick.css";
 import "../../../node_modules/slick-carousel/slick/slick-theme.css";
 import "./Clients.css";
-import Client1 from "../.././images/clientlogo/h-c.png";
-import Client2 from "../.././images/clientlogo/dig.png";
-import Client3 from "../.././images/clientlogo/talent.png";
-import Client4 from "../.././images/clientlogo/oriole.png";
-import Client5 from "../.././images/clientlogo/erly.png";
-import Client6 from "../.././images/clientlogo/pcm.png";
-import Client7 from "../.././images/clientlogo/c-m.png";
+import Client1 from "../.././images/clientlogo/hc.jpg";
+import Client2 from "../.././images/clientlogo/dig.jpg";
+import Client3 from "../.././images/clientlogo/talent.jpg";
+import Client4 from "../.././images/clientlogo/orl.jpg";
+import Client5 from "../.././images/clientlogo/erly.jpg";
+import Client6 from "../.././images/clientlogo/pcm.jpg";
+import Client7 from "../.././images/clientlogo/mag.jpg";
 
 function Clients(props) {
   const settings = {
     dots: false,
     infinite: true,
-    slidesToShow: 8,
+    slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
     speed: 5000,
@@ -57,15 +57,6 @@ function Clients(props) {
           </div>
           <div className="client_logo_wrapper">
             <img src={Client7} alt="sliderimg" />
-          </div>
-          <div className="client_logo_wrapper">
-            <img src={Client2} alt="sliderimg" />
-          </div>
-          <div className="client_logo_wrapper">
-            <img src={Client1} alt="sliderimg" />
-          </div>
-          <div className="client_logo_wrapper">
-            <img src={Client3} alt="sliderimg" />
           </div>
         </Slider>
       </div>
