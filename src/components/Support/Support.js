@@ -4,6 +4,7 @@ import "./Support.css";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import BannerImg from "../Banner/BannerImg";
+import GoToTop from "../Utility/GoToTop";
 
 function Support() {
   return (
@@ -172,6 +173,7 @@ function Support() {
         </div>
       </section>
       <Contact />
+      <GoToTop />
       <Footer />
     </>
   );

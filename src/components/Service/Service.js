@@ -6,6 +6,7 @@ import service1 from "../../images/book-show.jpg";
 import service2 from "../../images/book-banner.jpg";
 import BannerImgServ from "../Banner/BannerImgServ";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import GoToTop from "../Utility/GoToTop";
 
 function Service() {
   return (
@@ -72,6 +73,7 @@ function Service() {
           </div>
         </div>
       </section>
+      <GoToTop />
       <Footer />
     </div>
   );
