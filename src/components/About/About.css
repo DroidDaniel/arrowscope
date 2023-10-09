@@ -5,7 +5,8 @@
 .about_container{
     display: flex;
     justify-content: space-between;
-    max-width: 800px;
+    align-items: center;
+    gap: 30px;
     margin: 0 auto;
     box-sizing: content-box;
     border: solid 3px #000;

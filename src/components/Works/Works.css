@@ -641,6 +641,7 @@ ul {
   
   figcaption h1 {
     margin: 0;
+    font-size: 25px;
   }
   
   figcaption span {
@@ -686,4 +687,8 @@ ul {
 
   .btn_read__more{
     margin-left: 15px;
+  }
+
+  .readmore_txt{
+    margin-top: 10px;
   }

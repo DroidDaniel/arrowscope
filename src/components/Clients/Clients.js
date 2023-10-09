@@ -3,9 +3,13 @@ import Slider from "react-slick";
 import "../../../node_modules/slick-carousel/slick/slick.css";
 import "../../../node_modules/slick-carousel/slick/slick-theme.css";
 import "./Clients.css";
-import Client1 from "../.././images/clientlogo1.png";
-import Client2 from "../.././images/clientlogo2.png";
-import Client3 from "../.././images/clientlogo3.png";
+import Client1 from "../.././images/clientlogo/h-c.png";
+import Client2 from "../.././images/clientlogo/dig.png";
+import Client3 from "../.././images/clientlogo/talent.png";
+import Client4 from "../.././images/clientlogo/oriole.png";
+import Client5 from "../.././images/clientlogo/erly.png";
+import Client6 from "../.././images/clientlogo/pcm.png";
+import Client7 from "../.././images/clientlogo/c-m.png";
 
 function Clients(props) {
   const settings = {
@@ -43,16 +47,16 @@ function Clients(props) {
             <img src={Client3} alt="sliderimg" />
           </div>
           <div className="client_logo_wrapper">
-            <img src={Client1} alt="sliderimg" />
+            <img src={Client4} alt="sliderimg" />
           </div>
           <div className="client_logo_wrapper">
-            <img src={Client2} alt="sliderimg" />
+            <img src={Client5} alt="sliderimg" />
           </div>
           <div className="client_logo_wrapper">
-            <img src={Client3} alt="sliderimg" />
+            <img src={Client6} alt="sliderimg" />
           </div>
           <div className="client_logo_wrapper">
-            <img src={Client1} alt="sliderimg" />
+            <img src={Client7} alt="sliderimg" />
           </div>
           <div className="client_logo_wrapper">
             <img src={Client2} alt="sliderimg" />

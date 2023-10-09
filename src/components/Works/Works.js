@@ -1,6 +1,9 @@
 import React from "react";
 import "./Works.css";
 import Title from "../Utility/Title";
+import Cover1 from "../../images/cover1.jpg";
+import Cover2 from "../../images/cover2.jpg";
+import { Link } from "react-router-dom";
 
 function Works() {
   return (
@@ -14,12 +17,7 @@ function Works() {
             <figure className="book">
               <ul className="hardcover_front">
                 <li>
-                  <img
-                    src="https://s.cdpn.io/13060/book1.jpg"
-                    alt=""
-                    width="100%"
-                    height="100%"
-                  />
+                  <img src={Cover1} alt="" width="100%" height="100%" />
                   <span className="ribbon bestseller">Nº1</span>
                 </li>
                 <li></li>
@@ -44,13 +42,19 @@ function Works() {
                 <li></li>
               </ul>
               <figcaption>
-                <h1>Lorem Ipsum</h1>
+                <h1>Graphic Designing</h1>
 
                 <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s.
+                  Unlock the extraordinary power of visuals with our graphic
+                  design expertise. At the crossroads of imagination and
+                  innovation, we craft...
                 </p>
+
+                <div className="readmore_txt">
+                  <Link to="/services" className="btn_read">
+                    Read More
+                  </Link>
+                </div>
               </figcaption>
             </figure>
           </li>
@@ -58,12 +62,7 @@ function Works() {
             <figure className="book">
               <ul className="hardcover_front">
                 <li>
-                  <img
-                    src="https://s.cdpn.io/13060/book1.jpg"
-                    alt=""
-                    width="100%"
-                    height="100%"
-                  />
+                  <img src={Cover2} alt="" width="100%" height="100%" />
                   <span className="ribbon bestseller">Nº1</span>
                 </li>
                 <li></li>
@@ -88,13 +87,19 @@ function Works() {
                 <li></li>
               </ul>
               <figcaption>
-                <h1>Lorem Ipsum</h1>
+                <h1>Printing</h1>
 
                 <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s.
+                  Printing is a manifestation of your vision, not just ink on
+                  paper. Our printing services give your projects life by
+                  turning ideas into concrete...
                 </p>
+
+                <div className="readmore_txt">
+                  <Link to="/services" className="btn_read">
+                    Read More
+                  </Link>
+                </div>
               </figcaption>
             </figure>
           </li>

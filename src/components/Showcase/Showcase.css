@@ -26,20 +26,21 @@
     background-size: cover;
     box-shadow: 2px 5px 10px rgba(204, 204, 204, 0.438);
     transition: all .5s ease-in-out;
+    border: solid 1px #000;
 }
 
 .one{
-    background-image: url("../.././images/work1.png"); 
+    background-image: url("../.././images/./showcase/show-3.jpg"); 
     background-position: center;
 }
 
 .two{
-    background-image: url("../.././images/work2.png"); 
+    background-image: url("../.././images/./showcase/show-1.jpg"); 
 }
 
 
 .three{
-    background-image: url("../.././images/work3.png"); 
+    background-image: url("../.././images/./showcase/show-2.jpg"); 
 }
 
 
@@ -54,7 +55,7 @@
 
 
 .six{
-    background-image: url("../.././images/work6.png"); 
+    background-image: url("../.././images/./showcase/show-4.jpg"); 
 }
 
 
