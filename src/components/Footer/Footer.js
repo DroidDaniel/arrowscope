@@ -9,10 +9,10 @@ function Footer() {
           <div className="col-12 col-md-6">
             <h6>About</h6>
             <p className="text-justify footer_about__text">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
+              Welcome to Gaze, where creativity meets craftsmanship in the world
+              of graphic design and printing. With over two decades of
+              experience, we have honed our skills to perfection, delivering
+              inspiring designs and flawless prints that captivate and inspire.
             </p>
           </div>
 
