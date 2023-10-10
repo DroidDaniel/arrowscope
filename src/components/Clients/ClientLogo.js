@@ -1,12 +1,12 @@
 import React from "react";
 import "./ClientLogo.css";
-import Client1 from "../.././images/clientlogo/hc.jpg";
-import Client2 from "../.././images/clientlogo/dig.jpg";
-import Client3 from "../.././images/clientlogo/talent.jpg";
-import Client4 from "../.././images/clientlogo/orl.jpg";
-import Client5 from "../.././images/clientlogo/erly.jpg";
-import Client6 from "../.././images/clientlogo/pcm.jpg";
-import Client7 from "../.././images/clientlogo/mag.jpg";
+import Client1 from "../.././images/clientlogo/hc.png";
+import Client2 from "../.././images/clientlogo/dig.png";
+import Client3 from "../.././images/clientlogo/talent.png";
+import Client4 from "../.././images/clientlogo/orl.png";
+import Client5 from "../.././images/clientlogo/erly.png";
+import Client6 from "../.././images/clientlogo/pcm.png";
+import Client7 from "../.././images/clientlogo/mag.png";
 
 export default function ClientLogo() {
   return (

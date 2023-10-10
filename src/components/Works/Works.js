@@ -4,6 +4,7 @@ import Title from "../Utility/Title";
 import Cover1 from "../../images/cover1.jpg";
 import Cover2 from "../../images/cover2.jpg";
 import { Link } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function Works() {
   return (
@@ -17,8 +18,13 @@ function Works() {
             <figure className="book">
               <ul className="hardcover_front">
                 <li>
-                  <img src={Cover1} alt="" width="100%" height="100%" />
-                  <span className="ribbon bestseller">Nº1</span>
+                  <LazyLoadImage
+                    src={Cover1}
+                    alt=""
+                    width="100%"
+                    height="100%"
+                  />
+                  {/* <span className="ribbon bestseller">Nº1</span> */}
                 </li>
                 <li></li>
               </ul>
@@ -62,8 +68,13 @@ function Works() {
             <figure className="book">
               <ul className="hardcover_front">
                 <li>
-                  <img src={Cover2} alt="" width="100%" height="100%" />
-                  <span className="ribbon bestseller">Nº1</span>
+                  <LazyLoadImage
+                    src={Cover2}
+                    alt=""
+                    width="100%"
+                    height="100%"
+                  />
+                  {/* <span className="ribbon bestseller">Nº1</span> */}
                 </li>
                 <li></li>
               </ul>
