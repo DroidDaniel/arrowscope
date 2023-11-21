@@ -14,9 +14,9 @@ function About() {
             </h6>
 
             <p className="arr__body_text">
-              Welcome to Gaze, where creativity meets craftsmanship in the world
-              of graphic design and printing. With over two decades of
-              experience, we have honed our skills to perfection, delivering
+              Welcome to Gaze print system, where creativity meets craftsmanship
+              in the world of graphic design and printing. With over two decades
+              of experience, we have honed our skills to perfection, delivering
               inspiring designs and flawless prints that captivate and inspire.
             </p>
             <p className="arr__body_text">

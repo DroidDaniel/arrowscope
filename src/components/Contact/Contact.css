@@ -1,5 +1,6 @@
 .contact_sec {
   padding: 60px 0;
+  font-family: 'CG Omega';
 }
 
 .contact_sec_header {
@@ -10,6 +11,7 @@
 
 .contact_sec_heading {
   margin-bottom: 30px;
+  color: #323e99;
 }
 
 .contact_form__container {

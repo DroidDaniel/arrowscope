@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'CG Omega';
+    src: url('CGOmega-BoldItalic.eot');
+    src: url('CGOmega-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('CGOmega-BoldItalic.woff2') format('woff2'),
+        url('CGOmega-BoldItalic.woff') format('woff'),
+        url('CGOmega-BoldItalic.ttf') format('truetype'),
+        url('CGOmega-BoldItalic.svg#CGOmega-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CG Omega';
+    src: url('CGOmega-Bold.eot');
+    src: url('CGOmega-Bold.eot?#iefix') format('embedded-opentype'),
+        url('CGOmega-Bold.woff2') format('woff2'),
+        url('CGOmega-Bold.woff') format('woff'),
+        url('CGOmega-Bold.ttf') format('truetype'),
+        url('CGOmega-Bold.svg#CGOmega-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CG Omega';
+    src: url('CGOmega-Italic.eot');
+    src: url('CGOmega-Italic.eot?#iefix') format('embedded-opentype'),
+        url('CGOmega-Italic.woff2') format('woff2'),
+        url('CGOmega-Italic.woff') format('woff'),
+        url('CGOmega-Italic.ttf') format('truetype'),
+        url('CGOmega-Italic.svg#CGOmega-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CG Omega';
+    src: url('CGOmega.eot');
+    src: url('CGOmega.eot?#iefix') format('embedded-opentype'),
+        url('CGOmega.woff2') format('woff2'),
+        url('CGOmega.woff') format('woff'),
+        url('CGOmega.ttf') format('truetype'),
+        url('CGOmega.svg#CGOmega') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

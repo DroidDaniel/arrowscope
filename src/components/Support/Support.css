@@ -1,3 +1,7 @@
+.support_stripe{
+  font-family: 'CG Omega';
+}
+
 .icon-large {
   height: 103px;
   width: 103px;
@@ -48,6 +52,8 @@
   font-size: 18px;
   line-height: 36px;
   margin: 8px 0 0 0;
+  font-weight: bold;
+  color: #323e99;
 }
 
 @media screen and (max-width: 600px) {

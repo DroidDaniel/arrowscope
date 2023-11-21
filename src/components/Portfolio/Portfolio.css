@@ -3,6 +3,7 @@
   max-width: 1320px;
   padding: 120px 0;
   margin: 0 auto;
+  font-family: 'CG Omega';
 }
 
 .portfolio_card {
@@ -65,7 +66,7 @@
 }
 
 .portfolio__labels span.active {
-  border: solid 1px #eb9f2e;
+  border: solid 1px #323e99;
   opacity: 1;
 }
 
@@ -86,6 +87,7 @@
   cursor: pointer;
   row-gap: 10px;
   margin-bottom: 30px;
+  padding: 0 20px;
 }
 
 /***Book wrap****/

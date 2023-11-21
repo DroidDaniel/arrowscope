@@ -42,8 +42,16 @@ function Support() {
 
               <div className="support_stripe-info">
                 <h6 className="support_stripe-heading">Phone</h6>
-                <p className="support_stripe-para">+91 9874561230</p>
-                <p className="support_stripe-para">+91 9874561230</p>
+                <p className="support_stripe-para">
+                  <a className="contact_href" href="tel:+919447067733">
+                    +91 9447067733
+                  </a>
+                </p>
+                <p className="support_stripe-para">
+                  <a className="contact_href" href="tel:+919447067733">
+                    +91 9447067733
+                  </a>
+                </p>
               </div>
             </div>
 
@@ -85,8 +93,16 @@ function Support() {
 
               <div className="support_stripe-info">
                 <h6 className="support_stripe-heading">Email</h6>
-                <p className="support_stripe-para">info@domain.com</p>
-                <p className="support_stripe-para">info@domain.com</p>
+                <p className="support_stripe-para">
+                  <a className="contact_href" href="mailto:gazeindia@gmail.com">
+                    gazeindia@gmail.com
+                  </a>
+                </p>
+                <p className="support_stripe-para">
+                  <a className="contact_href" href="mailto:gazeindia@gmail.com">
+                    gazeindia@gmail.com
+                  </a>
+                </p>
               </div>
             </div>
 
@@ -126,7 +142,11 @@ function Support() {
               <div className="support_stripe-info">
                 <h6 className="support_stripe-heading">Kerala</h6>
                 <p className="support_stripe-para">Trivandrum</p>
-                <p className="support_stripe-para">+91 9874561230</p>
+                <p className="support_stripe-para">
+                  <a className="contact_href" href="tel:+919447067733">
+                    +91 9447067733
+                  </a>
+                </p>
               </div>
             </div>
 
@@ -166,7 +186,11 @@ function Support() {
               <div className="support_stripe-info">
                 <h6 className="support_stripe-heading">Tamilnadu</h6>
                 <p className="support_stripe-para">Sivakasi</p>
-                <p className="support_stripe-para">+91 9874561230</p>
+                <p className="support_stripe-para">
+                  <a className="contact_href" href="tel:+919447067733">
+                    +91 9447067733
+                  </a>
+                </p>
               </div>
             </div>
           </div>

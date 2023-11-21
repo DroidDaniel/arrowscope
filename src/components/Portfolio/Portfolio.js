@@ -84,7 +84,7 @@ function Portfolio() {
               projects.map((item, key) =>
                 item.filtered === true ? (
                   // <Link to={`/ourworks/${item.slug}`} key={key}>
-                  <div className="portfolio_card__container">
+                  <div className="portfolio_card__container" key={key}>
                     <LazyLoadImage
                       className="portfolio_card__wrapper"
                       src={item.imgurl}

@@ -1,11 +1,13 @@
 .service_sec {
   padding: 60px 0;
+  font-family: 'CG Omega';
 }
 
 .service1_heading {
   font-size: 22px;
   line-height: 40px;
   font-weight: bold;
+  color: #323e99;
 }
 
 .service1_cont:first-child {

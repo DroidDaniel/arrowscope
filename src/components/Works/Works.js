@@ -13,7 +13,7 @@ function Works() {
         <h6 className="arr__common_title Services_title">
           <Title title="Our Services" />{" "}
         </h6>
-        <ul className="align">
+        <ul className="works_card_align">
           <li>
             <figure className="book">
               <ul className="hardcover_front">
@@ -104,6 +104,56 @@ function Works() {
                   Printing is a manifestation of your vision, not just ink on
                   paper. Our printing services give your projects life by
                   turning ideas into concrete...
+                </p>
+
+                <div className="readmore_txt">
+                  <Link to="/services" className="btn_read">
+                    Read More
+                  </Link>
+                </div>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure className="book">
+              <ul className="hardcover_front">
+                <li>
+                  <LazyLoadImage
+                    src={Cover2}
+                    alt=""
+                    width="100%"
+                    height="100%"
+                  />
+                  {/* <span className="ribbon bestseller">Nº1</span> */}
+                </li>
+                <li></li>
+              </ul>
+              <ul className="page">
+                <li></li>
+                <li>
+                  <a className="btn btn_read__more" href="#">
+                    Read More
+                  </a>
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+              <ul className="hardcover_back">
+                <li></li>
+                <li></li>
+              </ul>
+              <ul className="book_spine">
+                <li></li>
+                <li></li>
+              </ul>
+              <figcaption>
+                <h1>Content Development</h1>
+
+                <p>
+                  Content Development for Children's Books: In the enchanting
+                  realm of children's literature, our content development sparks
+                  imagination. We craft stories that engage...
                 </p>
 
                 <div className="readmore_txt">

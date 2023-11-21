@@ -61,6 +61,7 @@ function Service() {
                 <LazyLoadImage img src={service2} alt="services" />
               </div>
             </div>
+            <h4 className="service1_heading">Content Development</h4>
             <p className="service1_para">
               Content Development for Children's Books: In the enchanting realm
               of children's literature, our content development sparks
