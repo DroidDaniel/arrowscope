@@ -9,11 +9,10 @@ function Footer() {
           <div className="col-12 col-md-6">
             <h6>About</h6>
             <p className="text-justify footer_about__text">
-              Welcome to Gaze print systems, where creativity meets
-              craftsmanship in the world of graphic design and printing. With
-              over two decades of experience, we have honed our skills to
-              perfection, delivering inspiring designs and flawless prints that
-              captivate and inspire.
+              Welcome to Gaze printsystems, where creativity meets craftsmanship
+              in the world of graphic design and printing. With over two decades
+              of experience, we have honed our skills to perfection, delivering
+              inspiring designs and flawless prints that captivate and inspire.
             </p>
           </div>
 
@@ -21,7 +20,6 @@ function Footer() {
             <h6>Kerala</h6>
             <ul className="footer-links">
               <li>Nalanchira P.O,</li>
-              <li>near New Family stores,</li>
               <li>Pananvila Jn,Thiruvananthapuram,</li>
               <li>Kerala 695015</li>
             </ul>

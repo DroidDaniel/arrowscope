@@ -9,6 +9,12 @@
 .client_logo_cont img{
     border: solid 1px #ccc;
     max-width: 130px;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+.client_logo_cont img:hover{
+    border-color: #000;
 }
 
 @media screen and (max-width:600px) {
