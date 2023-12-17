@@ -3,6 +3,14 @@
   height: 550px;
   background-image: url(../../images/contact.jpg);
   background-position: center center;
-  background-size: cover;
+  background-size: contain;
   background-color: #000;
+}
+
+@media screen and (max-width:600px) {
+  .bannerimg{
+     background-image: url(../../images/mobile-contact.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+  }
 }

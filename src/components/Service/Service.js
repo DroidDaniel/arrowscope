@@ -2,8 +2,12 @@ import React from "react";
 import "./Service.css";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
-import service1 from "../../images/book-show.jpg";
-import service2 from "../../images/book-banner.jpg";
+import service1 from "../../images/grapgic-design-1.jpg";
+import service2 from "../../images/grapgic-design-2.jpg";
+import service3 from "../../images/printing-1.jpg";
+import service4 from "../../images/printing-2.jpg";
+import service5 from "../../images/content-development-1.jpg";
+import service6 from "../../images/content-development-2.jpg";
 import BannerImgServ from "../Banner/BannerImgServ";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import GoToTop from "../Utility/GoToTop";
@@ -55,10 +59,10 @@ function Service() {
             </p>
             <div className="service1_imgblock">
               <div className="service_img">
-                <LazyLoadImage img src={service1} alt="services" />
+                <LazyLoadImage img src={service3} alt="services" />
               </div>
               <div className="service_img">
-                <LazyLoadImage img src={service2} alt="services" />
+                <LazyLoadImage img src={service4} alt="services" />
               </div>
             </div>
             <h4 className="service1_heading">Content Development</h4>
@@ -71,6 +75,14 @@ function Service() {
               world of fantasy and wonder, where stories come alive and young
               minds embark on magical journeys.
             </p>
+            <div className="service1_imgblock">
+              <div className="service_img">
+                <LazyLoadImage img src={service5} alt="services" />
+              </div>
+              <div className="service_img">
+                <LazyLoadImage img src={service6} alt="services" />
+              </div>
+            </div>
           </div>
         </div>
       </section>
