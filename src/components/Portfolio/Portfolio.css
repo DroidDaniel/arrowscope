@@ -140,3 +140,39 @@
 .feature-panel-image-link:hover .feature-panel-image {
   transform: rotate(-11deg);
 }
+
+.more_btn_container p{
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.more_btn_container{
+  border: solid 1px #323e997c;
+  padding: 10px 20px;
+  width: 100%;
+  max-width: 140px;
+  margin: 0 auto;
+  color: #323e99;
+  cursor: pointer;
+  margin-top: 50px;
+  text-align: center;
+  font-weight: bold;
+  transition: all .3s ease;
+}
+
+.more_btn_container:hover{
+  border: solid 1px #2134c4;
+}
+
+
+.less_btn_container{
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+  margin-top: 50px;
+  color: #323e99;
+}

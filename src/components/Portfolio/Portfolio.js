@@ -14,6 +14,7 @@ import { Link } from "react-router-dom";
 function Portfolio() {
   const [filter, setFilter] = useState("all");
   const [projects, setProjects] = useState([]);
+  const [visible, setVisible] = useState(8);
 
   useEffect(() => {
     setProjects(Records);
@@ -28,6 +29,9 @@ function Portfolio() {
     setProjects(filtered);
   }, [filter]);
 
+  const showMore = () => {
+    setVisible((prevValue) => prevValue + 8);
+  };
   return (
     <>
       <Navbar />
@@ -81,7 +85,7 @@ function Portfolio() {
             {projects.length === 0 ? (
               <img src={Loading} alt="" />
             ) : (
-              projects.map((item, key) =>
+              projects.slice(0, visible).map((item, key) =>
                 item.filtered === true ? (
                   // <Link to={`/ourworks/${item.slug}`} key={key}>
                   <div className="portfolio_card__container" key={key}>
@@ -107,6 +111,15 @@ function Portfolio() {
             )}
           </div>
         </div>
+        {projects.length <= visible ? (
+          <div className="less_btn_container">
+            <p>Thank you!</p>
+          </div>
+        ) : (
+          <div className="more_btn_container" onClick={showMore}>
+            <p>Load More</p>
+          </div>
+        )}
       </div>
       <GoToTop />
       <Footer />
