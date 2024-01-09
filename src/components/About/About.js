@@ -24,8 +24,8 @@ function About() {
               clients and esteemed institutions, forging relationships built on
               trust and innovation. We're not just in the business of design;
               we're in the business of transforming ideas into visual
-              masterpieces. Our label does not just stand for printers and
-              designers; instead, we are also storytellers. Every project we
+              masterpieces. Our label does not just stand for designers and
+              printers; instead, we are also storytellers. Every project we
               undertake is a canvas, and every design is a narrative waiting to
               be told. With a team of passionate creatives and cutting-edge
               technology, we bring your vision to life, leaving an indelible

@@ -96,3 +96,8 @@
 .icon-large:hover .support_icon {
   stroke: #ff89ad;
 }
+
+.google-map-code iframe{
+  width: 100%;
+  height: 450px;
+}
