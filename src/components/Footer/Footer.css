@@ -82,6 +82,15 @@
     text-align: center;
   }
 }
+
+@media (max-width: 600px) {
+  .site-footer .copyright-text,
+  .site-footer .social-icons {
+    line-height: 14px;
+    margin: 10px 0 5px 0;
+  }
+}
+
 .social-icons {
   padding-left: 0;
   margin-bottom: 0;
@@ -172,6 +181,13 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 0 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .ft_row {
+    justify-content: center;
+  }
 }
 
 .powerd_text p{

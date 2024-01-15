@@ -122,9 +122,6 @@ ul {
   /*
       3. opening cover, back cover and pages
   */
-  .hardcover_front {
-    z-index: 100;
-  }
   
   .hardcover_back {
     visibility: hidden;
