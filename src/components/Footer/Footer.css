@@ -154,3 +154,35 @@
   font-size: 12px;
   line-height: 22px;
 }
+
+.ft_row, .social_footer-links{
+  align-items: center;
+  display: flex;
+}
+
+.social_footer-links {
+  gap: 15px;
+  margin: 10px 0;
+  padding: 0;
+}
+
+
+.ft_row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.powerd_text p{
+  margin: 0;
+  font-size: 12px;
+  line-height: 16px;
+  color: #fff;
+}
+
+.powerd_text a {
+  color: #f7ab00;
+  text-decoration: none;
+  font-weight: bold;
+}

@@ -27,6 +27,7 @@
     box-shadow: 2px 5px 10px rgba(204, 204, 204, 0.438);
     transition: all .5s ease-in-out;
     border: solid 1px #000;
+    background-position: center center;
 }
 
 .one{
@@ -60,12 +61,12 @@
 
 
 .seven{
-    background-image: url("../.././images/./showcase/work-6.jpg"); 
+    background-image: url("../.././images/./showcase/work-6.png"); 
 }
 
 
 .eight{
-    background-image: url("../.././images/./showcase/work-7.jpg"); 
+    background-image: url("../.././images/./showcase/work-7.png"); 
 }
 
 

@@ -1,5 +1,7 @@
 import React from "react";
 import "./Footer.css";
+import Insta from "../../images/instagram.png";
+import Linked from "../../images/linkedin.png";
 
 function Footer() {
   return (
@@ -36,11 +38,42 @@ function Footer() {
         </div>
       </div>
       <div className="arrowscope_container">
-        <div className="row">
+        <div className="ft_row">
           <div className="footer_text">
             <p className="copyright-text">
               Copyright &copy; 2023 All Rights Reserved by Gaze print systems.
             </p>
+          </div>
+          <div className="powerd_text">
+            <p>
+              Powerd by{" "}
+              <a target="_blank" href="http://arrowscope.in/">
+                Arrowscope
+              </a>{" "}
+              Marketing Studio Pvt Ltd.
+            </p>
+          </div>
+          <div className="social_media_links">
+            <ul class="social_footer-links">
+              <li>
+                <a
+                  href="https://www.instagram.com/gaze_print_systems?igsh=eDFwdTN3YXczMnhk"
+                  target="_blank"
+                  title="instagram"
+                >
+                  <img src={Insta} alt="social" width="20" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/gaze-printsystems-b599902a2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                  target="_blank"
+                  title="linkedin"
+                >
+                  <img src={Linked} alt="social" width="20" />
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

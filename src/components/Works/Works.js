@@ -1,8 +1,9 @@
 import React from "react";
 import "./Works.css";
 import Title from "../Utility/Title";
-import Cover1 from "../../images/cover1.jpg";
-import Cover2 from "../../images/cover2.jpg";
+import Cover1 from "../../images/cover1.png";
+import Cover2 from "../../images/cover2.png";
+import Cover3 from "../../images/cover3.png";
 import { Link } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
@@ -119,7 +120,7 @@ function Works() {
               <ul className="hardcover_front">
                 <li>
                   <LazyLoadImage
-                    src={Cover2}
+                    src={Cover3}
                     alt=""
                     width="100%"
                     height="100%"

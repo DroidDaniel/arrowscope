@@ -82,30 +82,12 @@ ul {
   */
   /* HARDCOVER FRONT */
   .hardcover_front li:first-child {
-    background-color: #eee;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     backface-visibility: hidden;
   }
   
-  /* reverse */
-  .hardcover_front li:last-child {
-    background: #fffbec;
-  }
   
-  /* HARDCOVER BACK */
-  .hardcover_back li:first-child {
-    background: #fffbec;
-  }
-  
-  /* reverse */
-  .hardcover_back li:last-child {
-    background: #fffbec;
-  }
-  
-  .book_spine li:first-child {
-    background: #eee;
-  }
   
   .book_spine li:last-child {
     background: #333;
@@ -141,16 +123,11 @@ ul {
       3. opening cover, back cover and pages
   */
   .hardcover_front {
-    -webkit-transform: rotateY(-34deg) translateZ(8px);
-    -moz-transform: rotateY(-34deg) translateZ(8px);
-    transform: rotateY(-34deg) translateZ(8px);
     z-index: 100;
   }
   
   .hardcover_back {
-    -webkit-transform: rotateY(-15deg) translateZ(-8px);
-    -moz-transform: rotateY(-15deg) translateZ(-8px);
-    transform: rotateY(-15deg) translateZ(-8px);
+    visibility: hidden;
   }
   
   .page li:nth-child(1) {
@@ -226,11 +203,6 @@ ul {
     transform: translateZ(2px);
   }
   
-  .hardcover_front li:last-child {
-    -webkit-transform: rotateY(180deg) translateZ(2px);
-    -moz-transform: rotateY(180deg) translateZ(2px);
-    transform: rotateY(180deg) translateZ(2px);
-  }
   
   /* HARDCOVER back */
   .hardcover_back li:first-child {
@@ -346,6 +318,7 @@ ul {
     transform: rotateY(60deg) translateX(-5px) translateZ(-12px);
     width: 16px;
     z-index: 0;
+    visibility: hidden;
   }
   
   .book_spine li:first-child {
@@ -414,6 +387,7 @@ ul {
     top: 1%;
     left: 3%;
     z-index: 10;
+    visibility: hidden;
   }
   
   .page > li {

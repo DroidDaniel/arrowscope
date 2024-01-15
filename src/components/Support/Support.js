@@ -48,8 +48,8 @@ function Support() {
                   </a>
                 </p>
                 <p className="support_stripe-para">
-                  <a className="contact_href" href="tel:+919447067733">
-                    +91 9447067733
+                  <a className="contact_href" href="tel:+919544967733 ">
+                    +91 9544967733
                   </a>
                 </p>
               </div>
@@ -98,11 +98,11 @@ function Support() {
                     gazeindia@gmail.com
                   </a>
                 </p>
-                <p className="support_stripe-para">
+                {/* <p className="support_stripe-para">
                   <a className="contact_href" href="mailto:gazeindia@gmail.com">
                     gazeindia@gmail.com
                   </a>
-                </p>
+                </p> */}
               </div>
             </div>
 
