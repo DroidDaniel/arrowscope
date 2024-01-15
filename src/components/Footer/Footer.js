@@ -54,7 +54,7 @@ function Footer() {
             </p>
           </div>
           <div className="social_media_links">
-            <ul class="social_footer-links">
+            <ul className="social_footer-links">
               <li>
                 <a
                   href="https://www.instagram.com/gaze_print_systems?igsh=eDFwdTN3YXczMnhk"
