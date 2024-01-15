@@ -10,9 +10,17 @@ function Banner() {
       <video playsInline autoPlay loop muted id="bgvideo" className="dktp_vid">
         <source src={Mov} type="video/mp4" />
       </video>
-      <video playsInline autoPlay loop muted id="bgvideo" className="mob_vid">
+      <video
+        playsInline
+        autoPlay
+        loop
+        muted
+        id="bgvideo_mob"
+        className="mob_vid"
+      >
         <source src={MobMov} type="video/mp4" />
       </video>
+
       {/* <div className="arrowscope_container">
         <div className="banner__info">
           <div className="banner__content">
